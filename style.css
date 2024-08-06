@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mainContent {
+  background-color: blueviolet;
+}
+.header {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: blueviolet;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logoHeader {
+  margin-left: 200px;
+}
+.header .navHeader {
+  margin-right: 200px;
+  display: flex;
+}
+.header .navHeader div {
+  display: flex;
+  height: 80px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.sessao1 {
+  background-color: blueviolet;
+  margin: 0 auto;
+  max-width: 1150px;
+  display: flex;
+}
+.sessao1 .contentLeftSessao1 {
+  padding-top: 100px;
+  padding-right: 50px;
+  justify-content: left;
+  color: white;
+}
+.sessao1 .contentLeftSessao1 h1 {
+  font-size: 80px;
+  max-width: 550px;
+  margin-bottom: 30px;
+}
+
+.sessao1 .contentLeftSessao1 p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.sessao1 .contentLeftSessao1 button {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 25px;
+}
+.sessao1 .formSessao1 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+.sessao1 .formSessao1 h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.sessao1 .formSessao1 p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.sessao1 .formSessao1 input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 50px;
+}
+.sessao1 .formSessao1 button {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  background-color: #7c4fe0;
+  color: white;
+  font-size: 15px;
+}
