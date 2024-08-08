@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
+
 .mainContent {
   display: flex;
   flex-direction: column;
+  font-family: "Inter", sans-serif;
 }
-
+p {
+  font-size: 17px;
+}
 .sessao1 {
   background: linear-gradient(-47deg, #8731e8 0%, #4528dc 100%);
   display: flex;
@@ -52,12 +57,11 @@
   color: white;
 }
 .sessao1 .contentLeftSessao1 h1 {
-  font-size: 80px;
+  font-size: 60px;
   max-width: 550px;
   margin-bottom: 30px;
 }
 .sessao1 .contentLeftSessao1 p {
-  font-size: 20px;
   margin-bottom: 30px;
 }
 .sessao1 .contentLeftSessao1 button {
@@ -79,7 +83,6 @@
   margin-bottom: 30px;
 }
 .sessao1 .formSessao1 p {
-  font-size: 22px;
   margin-bottom: 15px;
 }
 .sessao1 .formSessao1 input {
@@ -127,9 +130,9 @@
 }
 .sessao2 .textoSessao2 h1 {
   font-size: 50px;
+  margin-bottom: 20px;
 }
 .sessao2 .textoSessao2 p {
-  font-size: 20px;
   max-width: 550px;
   margin-bottom: 100px;
 }
@@ -156,9 +159,7 @@
 .sessao2 .caixaDeConteudos .caixas img {
   width: 45px;
 }
-.sessao2 .caixaDeConteudos .caixas p {
-  font-size: 20px;
-}
+
 roxo {
   color: #7c4fe0;
 }
@@ -184,9 +185,7 @@ roxo {
   max-width: 430px;
   margin-bottom: 15px;
 }
-.conteudoSessao3 .textoSessao3 p {
-  font-size: 20px;
-}
+
 .conteudoSessao3 .textoSessao3 .listaTexto {
   display: flex;
   align-items: center;
@@ -264,7 +263,6 @@ roxo {
   padding: 5px;
 }
 .conteudoSessao4 .textoSessao4 .listaTextoSessao4 p {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 .conteudoSessao4 .celularSessao4 {
@@ -291,7 +289,6 @@ roxo {
   margin-bottom: 30px;
 }
 .conteudoSessao5 p {
-  font-size: 20px;
   margin-bottom: 30px;
   max-width: 650px;
   text-align: center;
@@ -303,6 +300,7 @@ roxo {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  margin-bottom: 50px;
 }
 .caixasSessao5 div {
   max-width: 350px;
@@ -317,6 +315,289 @@ roxo {
 }
 .caixasSessao5 div > p {
   text-align: center;
+}
+
+.sessao6 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.conteudoSessao6 {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1150px;
+  overflow: hidden;
+}
+.conteudoSessao6 h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.conteudoSessao6 p {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.carrocelSessao6 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0 auto;
+  margin: 20px;
+  max-width: 1150px;
+  overflow: hidden;
+}
+.carrocelSessao6 div {
+  display: flex;
+  max-width: 260px;
+  animation: marquee 3s infinite 30s;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.carrocelSessao6 div:nth-child(1) {
+  animation-delay: 3s;
+}
+.carrocelSessao6 div:nth-child(2) {
+  animation-delay: 3s;
+}
+.carrocelSessao6 div:nth-child(3) {
+  animation-delay: 3s;
+}
+.carrocelSessao6 div:nth-child(4) {
+  animation-delay: 3s;
+}
+.carrocelSessao6 div:nth-child(5) {
+  animation-delay: 3s;
+}
+
+.carrocelSessao6 div > img {
+  max-width: 258px;
+  object-fit: cover;
+}
+.marcador {
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.marcador-item {
+  margin-top: 50px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4528dc;
+  transition: background-color 0.3s;
+}
+
+.marcador-item:nth-child(1) {
+  animation: marcador 3s infinite 0s;
+}
+
+.marcador-item:nth-child(2) {
+  animation: marcador 6s infinite;
+}
+
+.marcador-item:nth-child(3) {
+  animation: marcador 9s infinite;
+}
+.marcador-item:nth-child(4) {
+  animation: marcador 3s infinite;
+}
+.marcador-item:nth-child(5) {
+  animation: marcador 3s infinite;
+}
+.sessao7 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.conteudoSessao7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.carrocelSessao7 {
+  position: relative;
+  width: 570px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+.conteudoCarrocelSessao7 {
+  position: absolute;
+  width: 570px;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  animation: carrocelSessao7 3s infinite;
+}
+.conteudoCarrocelSessao7 img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.conteudoCarrocelSessao7 h4 {
+  font-size: 24px;
+  margin: 10px;
+}
+.conteudoCarrocelSessao7 h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 40px;
+}
+.conteudoCarrocelSessao7 p {
+  max-width: 400px;
+  text-align: center;
+}
+@keyframes carrocelSessao7 {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+.carrocelSessao7:nth-child(1) {
+  animation-delay: 0s;
+}
+.carrocelSessao7:nth-child(2) {
+  animation-delay: 3s;
+}
+.carrocelSessao7:nth-child(3) {
+  animation-delay: 6s;
+}
+.sessao8 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f9fe;
+}
+.conteudoSessao8 {
+  max-width: 1150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin: 20px;
+}
+.conteudoSessao8 h1 {
+  display: flex;
+  font-size: 50px;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.conteudoSessao8 p {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin: 20px;
+  height: auto;
+}
+.divulgacaoCursosSessao8 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.basico {
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  box-shadow: 0 0 5px rgba(45, 49, 54, 0.09);
+  border-radius: 15px;
+  min-height: 550px;
+  margin-bottom: 30px;
+}
+.basico img {
+  width: 90px;
+}
+.basico h2 {
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.basico h1 {
+  color: #7c4fe0;
+}
+cifrao {
+  font-size: 25px;
+}
+.basico span {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+  min-height: 50px;
+  max-width: 250px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #ccc 1px solid;
+}
+.basico span > p {
+  padding: 5px;
+}
+.basico button {
+  position: absolute;
+  bottom: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7c4fe0;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.questions span {
+  font-size: 20px;
+  display: flex;
+  box-shadow: 0 0 5px rgba(45, 49, 54, 0.09);
+  background-color: white;
+  height: 50px;
+  width: 540px;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+@keyframes marcador {
+  0% {
+    background-color: #8731e8;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
 @media (max-width: 1200px) {
   .header {
@@ -336,10 +617,20 @@ roxo {
     align-items: center;
     justify-content: center;
   }
+  .carrocelSessao6 {
+    align-items: center;
+    max-width: 800px;
+  }
 }
 @media (max-width: 1080px) {
   .sessao2 .caixaDeConteudos {
     justify-content: center;
+  }
+}
+@media (max-width: 890px) {
+  .carrocelSessao6 {
+    align-items: center;
+    max-width: 450px;
   }
 }
 @media (max-width: 860px) {
@@ -374,6 +665,13 @@ roxo {
   .conteudoSessao3 .textoSessao3 h1 {
     max-width: 100%;
   }
+  .basico {
+    max-width: 350px;
+  }
+  .divulgacaoCursosSessao8 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 620px) {
   .navHeader {
@@ -385,13 +683,34 @@ roxo {
   .conteudoSessao3 .celularImg img {
     max-width: 400px;
   }
-
   .conteudoSessao4 {
     flex-direction: column;
     max-width: 700px;
   }
   .sessao4 .conteudoSessao4 .textoSessao4 button {
     margin-bottom: 30px;
+  }
+  .carrocelSessao6 {
+    max-width: 260px;
+  }
+  .conteudoSessao6 {
+    align-items: center;
+    justify-content: center;
+  }
+  .conteudoSessao8 h1 {
+    font-size: 35px;
+    max-width: 400px;
+  }
+  .conteudoSessao8 p {
+    max-width: 400px;
+  }
+  .questions {
+    max-width: 500px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .questions span {
+    max-width: 300px;
   }
 }
 @media (max-width: 480px) {
@@ -420,5 +739,9 @@ roxo {
   }
   .celularSessao4 {
     margin: 20px;
+  }
+  .basico {
+    max-width: 270px;
+    padding: 10px;
   }
 }
