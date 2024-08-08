@@ -87,6 +87,7 @@ p {
 }
 .sessao1 .formSessao1 input {
   width: 100%;
+  padding-left: 10px;
   margin-bottom: 10px;
   height: 50px;
 }
@@ -181,7 +182,7 @@ roxo {
   max-width: 540px;
 }
 .conteudoSessao3 .textoSessao3 h1 {
-  font-size: 50px;
+  font-size: 30px;
   max-width: 430px;
   margin-bottom: 15px;
 }
@@ -228,7 +229,7 @@ roxo {
   max-width: 600px;
 }
 .sessao4 .conteudoSessao4 .textoSessao4 h1 {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 .sessao4 .conteudoSessao4 .textoSessao4 button {
@@ -285,7 +286,7 @@ roxo {
   margin: 20px;
 }
 .conteudoSessao5 h1 {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 .conteudoSessao5 p {
@@ -333,7 +334,7 @@ roxo {
   overflow: hidden;
 }
 .conteudoSessao6 h1 {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 .conteudoSessao6 p {
@@ -499,7 +500,7 @@ roxo {
 }
 .conteudoSessao8 h1 {
   display: flex;
-  font-size: 50px;
+  font-size: 30px;
   max-width: 600px;
   text-align: center;
   margin-bottom: 20px;
