@@ -714,6 +714,86 @@ cifrao {
   background-color: #7c4fe0;
   color: white;
 }
+.sessao12 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #f6f9fe;
+}
+.conteudoSessao12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1150px;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+  margin-top: 50px;
+}
+.conteudoSessao12 p {
+  max-width: 700px;
+}
+.conteudoSessao12 .conteudos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  gap: 50px;
+  margin-top: 50px;
+}
+.conteudos .leftSessao12 {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 20px;
+}
+.conteudos .leftSessao12 div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-height: 50px;
+  text-align: left;
+}
+.conteudos .rightSessao12 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 20px;
+}
+.conteudos .rightSessao12 input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  box-shadow: 0 0 5px rgba(45, 49, 54, 0.09);
+  border: none;
+}
+.conteudos .rightSessao12 button {
+  width: 103%;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #f6f9fe;
+  background-color: #7c4fe0;
+  border: none;
+}
+.conteudos .rightSessao12 input:nth-child(4) {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.IconLeft {
+  display: flex;
+  padding: 15px;
+  background-color: #7c4fe0;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.IconLeft svg {
+  width: 20px;
+  color: white;
+}
 /* medias query */
 @keyframes marcador {
   0% {
@@ -749,6 +829,10 @@ cifrao {
 @media (max-width: 1080px) {
   .sessao2 .caixaDeConteudos {
     justify-content: center;
+  }
+  .conteudoSessao12 .conteudos {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 890px) {
@@ -850,6 +934,9 @@ cifrao {
   }
   .downloads {
     flex-direction: column;
+  }
+  .conteudos .rightSessao12 {
+    max-width: 270px;
   }
 }
 @media (max-width: 480px) {
