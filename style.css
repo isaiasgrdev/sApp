@@ -9,6 +9,9 @@
   flex-direction: column;
   font-family: "Inter", sans-serif;
 }
+h1 {
+  font-size: 50px;
+}
 p {
   font-size: 17px;
 }
@@ -29,8 +32,9 @@ p {
   justify-content: space-between;
   gap: 500px;
 }
-.header .logoHeader {
+.header .logoHeader img {
   display: flex;
+  width: 80px;
 }
 .header .navHeader {
   display: flex;
@@ -52,13 +56,12 @@ p {
 }
 .sessao1 .contentLeftSessao1 {
   padding-top: 100px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   justify-content: left;
   color: white;
 }
 .sessao1 .contentLeftSessao1 h1 {
-  font-size: 60px;
-  max-width: 550px;
   margin-bottom: 30px;
 }
 .sessao1 .contentLeftSessao1 p {
@@ -68,6 +71,11 @@ p {
   height: 50px;
   padding: 0 20px;
   border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #4528dc;
+  background-color: white;
 }
 .sessao1 .formSessao1 {
   display: flex;
@@ -77,9 +85,9 @@ p {
   padding: 50px;
   text-align: center;
   border-radius: 5px;
+  margin-bottom: 50px;
 }
 .sessao1 .formSessao1 h1 {
-  font-size: 30px;
   margin-bottom: 30px;
 }
 .sessao1 .formSessao1 p {
@@ -115,7 +123,7 @@ p {
 }
 .sessao2 .textoSessao2 span {
   height: 30px;
-  width: 200px;
+  width: 180px;
   border-radius: 15px;
   font-weight: 500;
   font-size: 22px;
@@ -123,6 +131,8 @@ p {
   gap: 5px;
   margin-bottom: 15px;
   box-shadow: 0 0 3px;
+  padding: 10px;
+  justify-content: center;
 }
 
 .textoSessao2 span > svg {
@@ -130,7 +140,6 @@ p {
   width: auto;
 }
 .sessao2 .textoSessao2 h1 {
-  font-size: 50px;
   margin-bottom: 20px;
 }
 .sessao2 .textoSessao2 p {
@@ -422,6 +431,7 @@ roxo {
   width: 100%;
   display: flex;
   align-items: center;
+  min-height: 1000px;
 }
 .conteudoSessao7 {
   display: flex;
@@ -438,7 +448,6 @@ roxo {
   flex-direction: row;
 }
 .conteudoCarrocelSessao7 {
-  position: absolute;
   width: 570px;
   object-fit: cover;
   align-items: center;
@@ -578,14 +587,16 @@ cifrao {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 100px;
+  width: 100%;
 }
 .questions span {
   font-size: 20px;
   display: flex;
   box-shadow: 0 0 5px rgba(45, 49, 54, 0.09);
   background-color: white;
-  height: 50px;
-  width: 540px;
+  min-height: 50px;
+  padding: 10px;
+  width: 100%;
   margin: 10px;
   align-items: center;
   justify-content: space-between;
@@ -636,7 +647,7 @@ cifrao {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(45, 49, 54, 09)
+  background: rgba(0, 0, 0, 0)
     url(https://theme-land.com/sapp/demo/assets/img/bg/download-bg.jpg)
     no-repeat fixed center center / cover;
   color: white;
@@ -762,10 +773,12 @@ cifrao {
   gap: 20px;
 }
 .conteudos .rightSessao12 input {
-  width: 100%;
+  display: flex;
+  min-width: 100%;
   height: 50px;
   padding-left: 10px;
   box-shadow: 0 0 5px rgba(45, 49, 54, 0.09);
+
   border: none;
 }
 .conteudos .rightSessao12 button {
@@ -857,6 +870,7 @@ cifrao {
   flex-direction: row;
   align-items: center;
   border-top: 1px solid #ccc;
+  margin: 20px;
 }
 /* medias query */
 @keyframes marcador {
@@ -889,14 +903,26 @@ cifrao {
     align-items: center;
     max-width: 800px;
   }
+  .containerSessao1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 @media (max-width: 1080px) {
+  .logoHeader {
+    margin-top: 30px;
+  }
   .sessao2 .caixaDeConteudos {
     justify-content: center;
   }
   .conteudoSessao12 .conteudos {
     flex-direction: column;
     align-items: center;
+  }
+  .sessao1 .contentLeftSessao1 {
+    padding-top: 35px;
   }
 }
 @media (max-width: 890px) {
@@ -920,6 +946,8 @@ cifrao {
     margin-top: 50px;
   }
   .containerSessao1 {
+    display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1000,13 +1028,10 @@ cifrao {
     flex-direction: column;
   }
   .conteudos .rightSessao12 {
-    max-width: 270px;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
-  .sessao1 .contentLeftSessao1 h1 {
-    font-size: 50px;
-  }
   .sessao1 .formSessao1 {
     padding: 25px;
   }
@@ -1020,7 +1045,10 @@ cifrao {
     max-width: 250px;
   }
   .questions {
-    max-width: 250px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 24px;
   }
 }
 @media (max-width: 380px) {
