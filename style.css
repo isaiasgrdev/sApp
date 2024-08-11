@@ -55,7 +55,6 @@ p {
   margin: 0 20px;
 }
 .sessao1 .contentLeftSessao1 {
-  padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
   justify-content: left;
@@ -227,7 +226,7 @@ roxo {
 }
 .sessao4 .conteudoSessao4 {
   margin: 20px;
-  margin-top: 80px;
+  margin-top: 50px;
   width: 1150px;
   display: flex;
   align-items: center;
@@ -240,7 +239,6 @@ roxo {
   flex-direction: column;
 }
 .sessao4 .conteudoSessao4 .textoSessao4 h1 {
-  font-size: 30px;
   margin-bottom: 30px;
 }
 .sessao4 .conteudoSessao4 .textoSessao4 button {
@@ -516,7 +514,6 @@ roxo {
 }
 .conteudoSessao8 h1 {
   display: flex;
-  font-size: 30px;
   max-width: 600px;
   text-align: center;
   margin-bottom: 20px;
@@ -918,7 +915,8 @@ cifrao {
 }
 @media (max-width: 1080px) {
   .logoHeader {
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .sessao2 .caixaDeConteudos {
     justify-content: center;
@@ -1010,7 +1008,6 @@ cifrao {
     justify-content: center;
   }
   .conteudoSessao8 h1 {
-    font-size: 35px;
     max-width: 400px;
   }
   .conteudoSessao8 p {
